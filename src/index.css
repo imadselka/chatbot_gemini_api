@@ -27,7 +27,6 @@ p {
 
 .search-result {
   margin-top: 10px;
-  overflow: scroll;
 }
 
 .surprise {
@@ -38,4 +37,54 @@ p {
   padding: 4px 12px;
   margin: 0 0 2px 5px;
   border: none;
+  cursor: pointer;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  border: solid 0.5px #cacaca;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 82, 0.15) 0 2px 4px;
+  overflow: hidden;
+}
+
+.input-container input {
+  border: none;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+  width: 90%;
+  font-weight: 200;
+}
+
+.input-container input::placeholder {
+  color: #cacaca;
+  font-weight: 200;
+}
+
+.input-container button {
+  background-color: #ececf1;
+  color: #777;
+  border-radius: 5px;
+  font-weight: bold;
+  flex: 1;
+  border: none;
+}
+
+.input-container button:active,
+.input-container button:hover {
+  background-color: #dcdce1;
+  cursor: pointer;
+}
+
+.answer {
+  padding: 13px 14px;
+  border: solid 0.5px #cacaca;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 82, 0.15) 0 2px 4px;
+  margin: 15px;
+  font-weight: 200;
 }
